@@ -6,6 +6,24 @@
 go install github.com/fadinflame/easyconnect@latest
 ```
 
+## Add EasyConnect to PATH
+
+After installing EasyConnect, ensure the GOPATH/bin directory is added to your system PATH. This allows you to run easyconnect from anywhere in the terminal.
+
+On Linux/macOS, add the following line to your shell configuration file (e.g., ~/.bashrc or ~/.zshrc):
+
+```bash
+export PATH=$PATH:$(go env GOPATH)/bin
+```
+
+On Windows, update your system environment variables to include $(go env GOPATH)\bin.
+
+Apply the changes by restarting your terminal or running:
+
+```bash
+source ~/.bashrc  # or source ~/.zshrc
+```
+
 ## Usage
 
 ```bash
